@@ -55,9 +55,9 @@ function LoginPage() {
 	
 }
 const valiadtePassword = (evt) => {
-	if(password.length<4)
+	if(password.length<4 && password.length>8)
 	{
-	setPasswordMessage("Please select a password of minimum length 4")
+	setPasswordMessage("Please select a password between the length of 4 to 8 ")
 	}
 	else {
 		setPasswordMessage('')
@@ -80,7 +80,7 @@ useEffect(() => {
       />
       </div>
           <button id={styles.google_button} className="col-sm-8 offset-sm-2"><div style={{display:"inline"}}><img src="google.jpg" style={{height:"30px",width:"30px",marginLeft:"-12px"}}/><span style={{fontWeight:"bold",paddingLeft:"3px"}}> Sign in with Google</span></div></button>
-          <button id={styles.facebook_button} className="col-sm-8 offset-sm-2"> <div style={{display:"inline",}}><img src="google.jpg" style={{height:"30px",width:"30px"}}/><span style={{fontWeight:"bold",paddingLeft:"3px"}}>Sign in with Facebook</span></div></button>
+          
 		<form onSubmit={handleSubmit}>
         <div style={{marginTop:"30px"}} >
           <label className="offset-sm-2">Email</label>
