@@ -71,13 +71,14 @@ useEffect(() => {
   return (
     <div className={styles.wrapper} >
       <div className={styles.section1}>
-        <h1 className={styles.card_header}> WELCOME TO MEDIUM</h1>
-       
+        <h1 className={styles.card_header}> WELCOME TO BLOGGING WEBSITE</h1>
+       <div className="col-sm-8 offset-sm-2">
       <FacebookLogin
         appId="827532588056413" 
         fields="name,email,picture"
         callback={responseFacebook}
       />
+      </div>
           <button id={styles.google_button} className="col-sm-8 offset-sm-2"><div style={{display:"inline"}}><img src="google.jpg" style={{height:"30px",width:"30px",marginLeft:"-12px"}}/><span style={{fontWeight:"bold",paddingLeft:"3px"}}> Sign in with Google</span></div></button>
           <button id={styles.facebook_button} className="col-sm-8 offset-sm-2"> <div style={{display:"inline",}}><img src="google.jpg" style={{height:"30px",width:"30px"}}/><span style={{fontWeight:"bold",paddingLeft:"3px"}}>Sign in with Facebook</span></div></button>
 		<form onSubmit={handleSubmit}>
