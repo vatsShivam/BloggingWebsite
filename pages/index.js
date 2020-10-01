@@ -6,7 +6,7 @@ export default function About() {
   return (
    <>
   <Navbar expand="lg" bg="light">
-  <Navbar.Brand href="/" className={styles.nav_brand} >MEDIUM</Navbar.Brand>
+  <Navbar.Brand href="/" className={styles.nav_brand} >BLOGGING WEBSITE</Navbar.Brand>
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
   <Nav.Link href="/login" className={styles.nav_sign} > Sign In</Nav.Link>
